@@ -32,9 +32,9 @@ public class RegisterAppApplication extends WebSecurityConfigurerAdapter impleme
 
 
         //        CoordinatesDAO coordinatesDAO = context.getBean(CoordinatesDAO.class);
-//        try {
-////            ListenTopic listenTopic = context.getBean(ListenTopic.class);
-////            listenTopic.receiveMessages();
+        try {
+            ListenTopic listenTopic = context.getBean(ListenTopic.class);
+            listenTopic.receiveMessages();
 ////
 ////            DeviceService deviceService = context.getBean(DeviceService.class);
 ////            deviceService.createDevice();
@@ -61,9 +61,9 @@ public class RegisterAppApplication extends WebSecurityConfigurerAdapter impleme
 //            System.out.println(json);
 //            final byte[] utf8Bytes = json.getBytes("UTF-8");
 //            System.out.println(utf8Bytes.length);
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @Override
